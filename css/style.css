@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1253px;
+    margin: auto;
+}
+
+.coming{
+    position: relative;
+    color: #d3bfc0;
+}
+
+.coming::after{
+    content: "COMING SOON";
+    position: absolute;
+    bottom: calc(100% + 3px );
+    left: calc(100% - 15px);
+    font-size: 0.5rem;
+    width: 100px;
+    color: blue;
+}
+
+/**************************************
+HEADER
+**************************************/
+header{
+    color: #8c8d9d;
+    padding: 10px 0 ;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* RIGHT */
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-left: 20px;
+    color: black;
+}
+
+.dark-btn{
+    background-color: black;
+    color: white;
+}
+
+/**************************************
+DROP MENU
+**************************************/
+.with-dropMenu{
+    position: relative;
+}
+.flex{
+    display: flex;
+}
+
+.dropMenu{
+    position: absolute;
+    top: calc(100% + 20px);
+    filter: drop-shadow(0px 0px 1px #8c8d9d);
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX( -25% );
+}
+
+.link-list{
+    padding: 25px;
+    min-width: 200px;
+}
+
+.link-list-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ced5db;
+    color: white;
+    margin-right: 10px;
+}
+
+.dropMenu h2{
+    color: #ced5db;
+    font-size: 0.7rem;
+}
+
+.dropMenu ul{
+    flex-direction: column;
+    align-items: unset;
+}
+
+.dropMenu ul li{
+    margin: 10px 0;
+}
